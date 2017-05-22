@@ -51,16 +51,16 @@ signal.signal(signal.SIGINT, signal_handler)
 
 # Data change callback functions
 def cb_potentiometer(data):
-    print("Analog Data: ",
+    print(("Analog Data: ",
           " Pin: ", data[PIN_NUMBER],
           " Pin Mode: ", data[PIN_MODE],
-          " Data Value: ", data[DATA_VALUE])
+          " Data Value: ", data[DATA_VALUE]))
 
 def cb_push_button(data):
-    print("Digital Data:",
+    print(("Digital Data:",
           " Pin: ", data[PIN_NUMBER],
           " Pin Mode: ", data[PIN_MODE],
-          " Data Value: ", data[DATA_VALUE])
+          " Data Value: ", data[DATA_VALUE]))
 
 # Instantiate PyMata
 board = PyMata("/dev/ttyACM0", verbose=True)

@@ -64,11 +64,11 @@ board.capability_query()
 # Some boards take a long time to respond - adjust as needed
 time.sleep(5)
 print("Pin Capability Report")
-print(board.get_capability_query_results())
+print((board.get_capability_query_results()))
 
 print("PyMata Digital Response Table")
-print(board.get_digital_response_table())
+print((board.get_digital_response_table()))
 
 print("PyMata Analog Response Table")
-print(board.get_analog_response_table())
+print((board.get_analog_response_table()))
 

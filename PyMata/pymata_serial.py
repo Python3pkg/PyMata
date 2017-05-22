@@ -72,7 +72,7 @@ class PyMataSerial(threading.Thread):
         """
         # open a serial port
         if verbose:
-            print('\nOpening Arduino Serial port %s ' % self.port_id)
+            print(('\nOpening Arduino Serial port %s ' % self.port_id))
 
         try:
 

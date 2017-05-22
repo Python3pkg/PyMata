@@ -68,10 +68,10 @@ def cb_potentiometer_latch(data):
     board.digital_write(GREEN_LED, 0)
 
     # Print all data from the latch callback including time stamp
-    print('Latching Event Mode:%x  Pin:%d  Data Value:%d Time of Event:%s' % 
+    print(('Latching Event Mode:%x  Pin:%d  Data Value:%d Time of Event:%s' % 
           (data[LATCH_TYPE], data[LATCH_PIN],
            data[LATCH_DATA_VALUE],
-           time.asctime(time.gmtime(data[LATCH_TIME_STAMP]))))
+           time.asctime(time.gmtime(data[LATCH_TIME_STAMP])))))
     # Shut things down
     board.close()
 

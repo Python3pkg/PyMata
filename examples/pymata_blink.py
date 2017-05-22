@@ -49,7 +49,7 @@ print("Blinking LED on pin 13 for 10 times ...")
 
 # Blink for 10 times
 for x in range(10):
-    print(x + 1)
+    print((x + 1))
     # Set the output to 1 = High
     board.digital_write(BOARD_LED, 1)
     # Wait a half second between toggles.

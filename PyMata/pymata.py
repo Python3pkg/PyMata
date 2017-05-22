@@ -120,7 +120,7 @@ class PyMata:
             self.verbose = verbose
 
             if self.verbose:
-                print("\nPython Version %s" % sys.version)
+                print(("\nPython Version %s" % sys.version))
                 print('\nPyMata version 2.14  Copyright(C) 2013-17 Alan Yorinks    All rights reserved.')
 
             # Instantiate the serial support class

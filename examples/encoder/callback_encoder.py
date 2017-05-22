@@ -44,7 +44,7 @@ DATA = 2
 
 
 def encoder_callback(data):
-    print("Data = %d" % data[DATA])
+    print(("Data = %d" % data[DATA]))
 
 # create a PyMata instance
 board = PyMata("/dev/ttyACM0")

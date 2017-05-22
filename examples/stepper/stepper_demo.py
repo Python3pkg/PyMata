@@ -57,8 +57,8 @@ firmata.stepper_request_library_version()
 # allow time for command and reply to go across the serial link
 time.sleep(.5)
 
-print("Stepper Library Version",)
-print(firmata.get_stepper_version())
+print(("Stepper Library Version",))
+print((firmata.get_stepper_version()))
 
 # move motor #0 500 steps forward at a speed of 20
 firmata.stepper_step(20, 500)

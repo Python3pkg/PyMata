@@ -239,7 +239,7 @@ class PyMataCommandHandler(threading.Thread):
             time.sleep(.1)
 
         if verbose:
-            print("Board initialized in %d seconds" % (time.time() - start_time))
+            print(("Board initialized in %d seconds" % (time.time() - start_time)))
 
         for pin in self.analog_mapping_query_results:
             self.total_pins_discovered += 1
@@ -248,8 +248,8 @@ class PyMataCommandHandler(threading.Thread):
                 self.number_of_analog_pins_discovered += 1
 
         if verbose:
-            print('Total Number of Pins Detected = %d' % self.total_pins_discovered)
-            print('Total Number of Analog Pins Detected = %d' % self.number_of_analog_pins_discovered)
+            print(('Total Number of Pins Detected = %d' % self.total_pins_discovered))
+            print(('Total Number of Analog Pins Detected = %d' % self.number_of_analog_pins_discovered))
 
         # response table initialization
         # for each pin set the mode to input and the last read data value to zero

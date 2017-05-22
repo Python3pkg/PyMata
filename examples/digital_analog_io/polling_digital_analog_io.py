@@ -79,8 +79,8 @@ while 1:
     if latch[1] == board.LATCH_LATCHED:
         board.analog_write(RED_LED, 0)
         board.digital_write(GREEN_LED, 0)
-        print('Latching Event Occurred at: ' + \
-              time.asctime(time.gmtime(latch[3])))
+        print(('Latching Event Occurred at: ' + \
+              time.asctime(time.gmtime(latch[3]))))
         board.close()
         sys.exit(0)
 

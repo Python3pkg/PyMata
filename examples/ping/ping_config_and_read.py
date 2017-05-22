@@ -46,6 +46,6 @@ time.sleep(1)
 
 while 1:
     data = board.get_sonar_data()
-    print(str(data[2]) + ' centimeters')
+    print((str(data[2]) + ' centimeters'))
     time.sleep(.2)
 

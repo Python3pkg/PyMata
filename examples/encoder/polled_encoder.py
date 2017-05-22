@@ -55,5 +55,5 @@ while 1:
     value = board.digital_read(ENCODER_B)
     if value != prev_value:
         prev_value = value
-        print(board.digital_read(ENCODER_B))
+        print((board.digital_read(ENCODER_B)))
     pass
